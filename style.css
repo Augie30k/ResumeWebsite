@@ -361,6 +361,30 @@ footer {
 @media (max-width: 768px) {
   h1 {
     font-size: 40px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 40px;
+    padding-top: 80px !important;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .bento-grid {
@@ -368,8 +392,111 @@ footer {
     flex-direction: column;
   }
 
+  /* Force full width on mobile */
+  .col-span-12,
   .col-span-6,
   .col-span-4 {
+    grid-column: span 12;
     width: 100%;
   }
+
+  /* Project Cards Mobile */
+  .project-card-row {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .project-content {
+    padding: 24px !important;
+  }
+
+  .project-visual {
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  /* Profile Pic Mobile */
+  .profile-wrapper {
+    width: 280px !important;
+    height: 280px !important;
+    order: -1;
+    margin-bottom: 24px;
+  }
+
+  .profile-img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .profile-border {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Utilities for Refactoring - Desktop Defaults */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 140px 0;
+}
+
+.hero-buttons {
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+}
+
+.project-card-row {
+  padding: 0;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.project-content {
+  flex: 1;
+  padding: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: 1;
+}
+
+.finance-visual-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.finance-visual-box {
+  width: 80%;
+  height: 60%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
 }

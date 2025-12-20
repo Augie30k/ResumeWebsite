@@ -46,18 +46,18 @@
   <main class="container">
 
     <!-- Hero Section -->
-    <header id="about" class="hero"
-      style="flex-direction: row; justify-content: space-between; align-items: center; text-align: left; padding: 140px 0;">
+    <!-- Hero Section -->
+    <header id="about" class="hero hero-container">
       <div class="hero-content" style="max-width: 650px;">
         <h2
           style="border: none; margin-bottom: 8px; font-size: 24px; color: var(--accent-cyan); letter-spacing: 0.2em; text-transform: uppercase;">
           Hello World</h2>
         <h1 style="font-size: 72px; margin-bottom: 16px; font-weight: 800;">I'm <span class="gradient-text">Augustine
             Asumadu</span></h1>
-        <p class="subtitle" style="font-size: 24px; color: var(--text-secondary); max-width: 600px;">Software Engineer
+        <p class="subtitle">Software Engineer
           specializing in Web Systems & AI. <br> Pursuing MS CS at Georgia Tech.</p>
 
-        <div style="margin-top: 48px; display: flex; gap: 24px;">
+        <div class="hero-buttons">
           <a href="Resume.docx.pdf" download="Augustine_Asumadu_Resume.pdf" class="project-link-btn"
             style="background: var(--gradient-text); color: var(--bg-deep); padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 700; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 8px 24px rgba(34, 211, 238, 0.2);">Download
             Resume</a>
@@ -66,8 +66,8 @@
             Work</a>
         </div>
       </div>
-      <div style="position: relative;">
-        <div
+      <div class="profile-wrapper" style="position: relative;">
+        <div class="profile-border"
           style="position: absolute; width: 100%; height: 100%; border: 2px solid var(--accent-cyan); border-radius: 40px; z-index: -1; opacity: 3;">
         </div>
         <img src="profilePicture.JPG" alt="Profile" class="profile-img"
@@ -140,10 +140,9 @@
 
         <!-- Featured Project: Generations -->
 
-        <div class="bento-item col-span-12 project-feature"
-          style="padding: 0; min-height: 400px; display: flex; flex-direction: row; overflow: hidden;">
-          <div
-            style="flex: 1; padding: 40px; z-index: 2; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(90deg, rgba(2,6,23,0.95) 0%, rgba(2,6,23,0.8) 60%, transparent 100%);">
+        <div class="bento-item col-span-12 project-feature project-card-row">
+          <div class="project-content"
+            style="background: linear-gradient(90deg, rgba(2,6,23,0.95) 0%, rgba(2,6,23,0.8) 60%, transparent 100%);">
             <span class="feature-tag">Live Production App</span>
             <h3 style="font-size: 32px; margin-bottom: 16px;">Generations</h3>
             <p style="color: var(--text-secondary); margin-bottom: 24px; max-width: 450px;">
@@ -159,17 +158,15 @@
                 App</a>
             </div>
           </div>
-          <div style="position: absolute; top: 0; right: 0; width: 65%; height: 100%; z-index: 1;">
+          <div class="project-visual">
             <img src="assets/generations_preview.png" alt="Generations App Preview"
               style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6; mask-image: linear-gradient(to left, black 50%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 50%, transparent 100%);">
           </div>
         </div>
 
         <!-- Project 2: Finance Dashboard -->
-        <div class="bento-item col-span-12 project-feature"
-          style="padding: 0; min-height: 400px; display: flex; flex-direction: row; overflow: hidden; background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));">
-          <div
-            style="flex: 1; padding: 40px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+        <div class="bento-item col-span-12 project-feature project-card-row">
+          <div class="project-content">
             <span class="feature-tag"
               style="background: rgba(34, 211, 238, 0.1); color: var(--accent-cyan); border: 1px solid rgba(34, 211, 238, 0.3); font-size: 11px; margin-bottom: 16px; width: fit-content; padding: 4px 12px;">In
               Progress</span>
@@ -189,11 +186,9 @@
               </span>
             </div>
           </div>
-          <div
-            style="flex: 1; position: relative; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2);">
+          <div class="finance-visual-container">
             <!-- Abstract Chart / Visual Placeholder -->
-            <div
-              style="width: 80%; height: 60%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02); display: flex; flex-direction: column; padding: 20px; position: relative; overflow: hidden; backdrop-filter: blur(10px);">
+            <div class="finance-visual-box">
               <!-- Mock Header -->
               <div
                 style="height: 20px; width: 40%; background: rgba(255,255,255,0.1); border-radius: 4px; margin-bottom: auto;">
@@ -320,7 +315,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 - Portfolio hosted on GitHub Pages.</p>
+    <p>&copy; 2025 - Augustine Asumadu. All rights reserved.</p>
   </footer>
 
   <script>
