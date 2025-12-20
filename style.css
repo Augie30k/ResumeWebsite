@@ -138,10 +138,50 @@ section {
   z-index: 1000;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+  /* Centered by default */
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
 .nav-links {
   display: flex;
   gap: 32px;
   list-style: none;
+  padding: 0 16px;
+  justify-content: center;
+}
+
+.nav-links li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  /* Prevent wrapping */
+}
+
+.nav-socials {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  /* Position absolute to not affect centering of links if possible, or usually flex is better */
+  right: 0;
+}
+
+/* Redefine for simple flex layout per user existing design but cleaner */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-socials {
+  position: static;
+  /* Reset */
 }
 
 .nav-links li a {
@@ -433,6 +473,37 @@ footer {
   .profile-border {
     width: 100% !important;
     height: 100% !important;
+  }
+
+  /* Mobile Navbar Overrides */
+  .nav-links {
+    gap: 16px !important;
+    /* Smaller gap */
+    padding: 0 !important;
+  }
+
+  .nav-links li a {
+    font-size: 12px !important;
+    /* Smaller text */
+  }
+
+  .nav-socials {
+    gap: 12px !important;
+    margin-left: 12px;
+    /* Ensure collision safety */
+  }
+}
+
+/* Extra small devices (phones, less than 370px) */
+@media (max-width: 370px) {
+  .nav-socials {
+    display: none !important;
+    /* Hide icons on very small screens to preserve menu */
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between !important;
   }
 }
 
