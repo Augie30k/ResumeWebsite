@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Augustine Asumadu | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="particles-js"></canvas>
+
+  <nav class="navbar">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social-mini" style="display: flex; gap: 16px;">
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/augustine-asumadu-137557168/" target="_blank" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Hero Section -->
+    <header id="about" class="hero"
+      style="flex-direction: row; justify-content: space-between; align-items: center; text-align: left; padding: 140px 0;">
+      <div class="hero-content" style="max-width: 650px;">
+        <h2
+          style="border: none; margin-bottom: 8px; font-size: 24px; color: var(--accent-cyan); letter-spacing: 0.2em; text-transform: uppercase;">
+          Hello World</h2>
+        <h1 style="font-size: 72px; margin-bottom: 16px; font-weight: 800;">I'm <span class="gradient-text">Augustine
+            Asumadu</span></h1>
+        <p class="subtitle" style="font-size: 24px; color: var(--text-secondary); max-width: 600px;">Software Engineer
+          specializing in Web Systems & AI. <br> Pursuing MS CS at Georgia Tech.</p>
+
+        <div style="margin-top: 48px; display: flex; gap: 24px;">
+          <a href="Resume.docx.pdf" download="Augustine_Asumadu_Resume.pdf" class="project-link-btn"
+            style="background: var(--gradient-text); color: var(--bg-deep); padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 700; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 8px 24px rgba(34, 211, 238, 0.2);">Download
+            Resume</a>
+          <a href="#projects" class="project-link-btn"
+            style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #ffffff; padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 600; backdrop-filter: blur(10px);">Explore
+            Work</a>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div
+          style="position: absolute; width: 100%; height: 100%; border: 2px solid var(--accent-cyan); border-radius: 40px; z-index: -1; opacity: 3;">
+        </div>
+        <img src="profilePicture.JPG" alt="Profile" class="profile-img"
+          style="width: 380px; height: 380px; border-radius: 40px; border: 1px solid rgba(255, 255, 255, 0.1); object-fit: cover; box-shadow: 0 40px 80px rgba(0,0,0,0.5); margin: 0; display: block;">
+      </div>
+    </header>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div
+        style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius-lg); padding: 32px; backdrop-filter: blur(20px);">
+        <h2 style="font-size: 28px; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; border: none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+          Education
+        </h2>
+        <!-- Georgia Tech -->
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <h3 style="font-size: 24px; color: #ffffff;">Georgia Institute of Technology</h3>
+            <p style="color: var(--accent-cyan); font-weight: 600; margin-bottom: 4px;">M.S. Computer Science (OMSCS)
+            </p>
+            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 4px;">Concentration in Machine
+              Learning & Artificial Intelligence</p>
+            <p style="color: #e9d5ff; font-weight: 500; font-size: 14px;">GPA: 4.0</p>
+          </div>
+          <div style="text-align: right;">
+            <span class="feature-tag"
+              style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.4); color: #e9d5ff;">In
+              Progress</span>
+          </div>
+        </div>
+        <div style="margin-top: 16px;">
+          <p style="color: #ffffff; font-weight: 600; margin-bottom: 10px; font-size: 14px;">Relevant Coursework:</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 7641 Machine Learning</span>
+            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 7643 Deep Learning</span>
+            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 6601 Artificial Intelligence</span>
+            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 6250 Computer Networks</span>
+            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 7637 Knowledge-Based AI</span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="height: 1px; background: rgba(255,255,255,0.1); margin: 32px 0;"></div>
+
+        <!-- WPI -->
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <h3 style="font-size: 24px; color: #ffffff;">Worcester Polytechnic Institute</h3>
+            <p style="color: var(--accent-cyan); font-weight: 600; margin-bottom: 4px;">B.S. Management Information
+              Systems</p>
+            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 4px;">Minor in Computer Science</p>
+            <p style="color: #e9d5ff; font-weight: 500; font-size: 14px;">GPA: 3.52</p>
+          </div>
+          <div style="text-align: right;">
+            <span class="feature-tag"
+              style="background: rgba(34, 211, 238, 0.1); border-color: rgba(34, 211, 238, 0.3); color: var(--accent-cyan);">Graduated</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Bento Grid) -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="bento-grid">
+
+        <!-- Featured Project: Generations -->
+
+        <div class="bento-item col-span-12 project-feature"
+          style="padding: 0; min-height: 400px; display: flex; flex-direction: row; overflow: hidden;">
+          <div
+            style="flex: 1; padding: 40px; z-index: 2; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(90deg, rgba(2,6,23,0.95) 0%, rgba(2,6,23,0.8) 60%, transparent 100%);">
+            <span class="feature-tag">Live Production App</span>
+            <h3 style="font-size: 32px; margin-bottom: 16px;">Generations</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 24px; max-width: 450px;">
+              A comprehensive genealogy platform empowering users to track their family lineage.
+              Features include <strong>interactive family trees</strong>, a global ancestry map ("Travel the World"- in
+              progress),
+              and a people search engine.
+              Built with complex graph data structures for relationship mapping and optimized for large datasets.
+            </p>
+            <div style="display: flex; gap: 16px;">
+              <a href="https://myfamilygenerations.com/" target="_blank" class="project-link-btn"
+                style="background: var(--text-primary); color: var(--bg-deep); padding: 12px 24px; border-radius: 8px; margin-top: 0; text-decoration: none;">Launch
+                App</a>
+            </div>
+          </div>
+          <div style="position: absolute; top: 0; right: 0; width: 65%; height: 100%; z-index: 1;">
+            <img src="assets/generations_preview.png" alt="Generations App Preview"
+              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6; mask-image: linear-gradient(to left, black 50%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 50%, transparent 100%);">
+          </div>
+        </div>
+
+        <!-- Project 2: Finance Dashboard -->
+        <div class="bento-item col-span-12 project-feature"
+          style="padding: 0; min-height: 400px; display: flex; flex-direction: row; overflow: hidden; background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));">
+          <div
+            style="flex: 1; padding: 40px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+            <span class="feature-tag"
+              style="background: rgba(34, 211, 238, 0.1); color: var(--accent-cyan); border: 1px solid rgba(34, 211, 238, 0.3); font-size: 11px; margin-bottom: 16px; width: fit-content; padding: 4px 12px;">In
+              Progress</span>
+            <h3 style="font-size: 32px; margin: 0 0 16px 0;">Finance Budgeting App</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 24px; max-width: 450px;">
+              A high-performance personal finance and budgetingplatform.
+              Features <strong>real-time budgeting</strong>, <strong>net worth tracking</strong>, spending and
+              Transaction Analytics.
+              Building with Next.js and secure banking integrations (Plaid).
+            </p>
+            <div style="display: flex; gap: 16px;">
+              <span
+                style="font-size: 14px; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;">
+                <span
+                  style="width: 8px; height: 8px; background: var(--accent-cyan); border-radius: 50%; box-shadow: 0 0 8px var(--accent-cyan);"></span>
+                Currently Building
+              </span>
+            </div>
+          </div>
+          <div
+            style="flex: 1; position: relative; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2);">
+            <!-- Abstract Chart / Visual Placeholder -->
+            <div
+              style="width: 80%; height: 60%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02); display: flex; flex-direction: column; padding: 20px; position: relative; overflow: hidden; backdrop-filter: blur(10px);">
+              <!-- Mock Header -->
+              <div
+                style="height: 20px; width: 40%; background: rgba(255,255,255,0.1); border-radius: 4px; margin-bottom: auto;">
+              </div>
+              <!-- Mock Bars -->
+              <div
+                style="display: flex; align-items: flex-end; justify-content: space-between; height: 180px; gap: 8px;">
+                <div
+                  style="width: 15%; height: 40%; background: var(--accent-purple); border-radius: 4px; opacity: 0.5;">
+                </div>
+                <div
+                  style="width: 15%; height: 60%; background: var(--accent-purple); border-radius: 4px; opacity: 0.6;">
+                </div>
+                <div
+                  style="width: 15%; height: 30%; background: var(--accent-purple); border-radius: 4px; opacity: 0.4;">
+                </div>
+                <div
+                  style="width: 15%; height: 75%; background: var(--accent-cyan); border-radius: 4px; opacity: 0.8; box-shadow: 0 0 16px rgba(34, 211, 238, 0.2);">
+                </div>
+                <div
+                  style="width: 15%; height: 50%; background: var(--accent-purple); border-radius: 4px; opacity: 0.5;">
+                </div>
+              </div>
+              <!-- Mock Trend Line -->
+              <svg
+                style="position: absolute; bottom: 20px; left: 0; width: 100%; height: 100px; opacity: 0.3; pointer-events: none;"
+                preserveAspectRatio="none">
+                <path d="M0,100 Q100,80 200,60 T400,30" fill="none" stroke="var(--accent-cyan)" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="bento-grid">
+        <div class="bento-item col-span-6">
+          <span style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; display: block;">2022 -
+            Present</span>
+          <h3>Software Engineer</h3>
+          <p style="margin-bottom: 4px; color: var(--text-primary);">Tech Company Inc.</p>
+          <p style="font-size: 14px;">Architected and implemented core features for the main product suite. Improved API
+            latency by 40% through caching strategies.</p>
+        </div>
+        <div class="bento-item col-span-6">
+          <span style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; display: block;">2020 -
+            2022</span>
+          <h3>Junior Engineer</h3>
+          <p style="margin-bottom: 4px; color: var(--text-primary);">Startup Co.</p>
+          <p style="font-size: 14px;">Full-stack development associated with high-growth product phases. Collaborated
+            with cross-functional teams to ship features bi-weekly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Arsenal</h2>
+
+      <h3 style="color: var(--accent-cyan); margin-bottom: 16px; margin-top: 0px;">Fullstack Engineering</h3>
+      <div class="bento-grid" style="margin-bottom: 40px;">
+        <div class="bento-item col-span-4 skill-card">React & Next.js</div>
+        <div class="bento-item col-span-4 skill-card">TypeScript / Node.js</div>
+        <div class="bento-item col-span-4 skill-card">Python (Django/Flask)</div>
+        <div class="bento-item col-span-4 skill-card">PostgreSQL & SQL</div>
+        <div class="bento-item col-span-4 skill-card">Docker & AWS</div>
+        <div class="bento-item col-span-4 skill-card">CI/CD & DevOps</div>
+      </div>
+
+      <h3 style="color: var(--accent-purple); margin-bottom: 16px;">AI & Machine Learning</h3>
+      <div class="bento-grid">
+        <div class="bento-item col-span-4 skill-card">PyTorch & NumPy</div>
+        <div class="bento-item col-span-4 skill-card">Scikit-learn & Pandas</div>
+        <div class="bento-item col-span-4 skill-card">Search Algorithms (A*)</div>
+        <div class="bento-item col-span-4 skill-card">Game Theory (Minimax)</div>
+        <div class="bento-item col-span-4 skill-card">Supervised Learning</div>
+        <div class="bento-item col-span-4 skill-card">Neural Networks</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Open to Opportunities</h2>
+      <p style="margin-bottom: 32px; text-align: center;">Currently seeking full-time Software Engineering roles in
+        Application Development, AI/ML .</p>
+
+      <div style="display: flex; justify-content: center; gap: 32px; margin-bottom: 40px;">
+        <a href="https://github.com" target="_blank"
+          style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/augustine-asumadu-137557168/" target="_blank"
+          style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="mailto:augie30k@gmail.com"
+          style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Portfolio hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('particles-js');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+
+    class Particle {
+      constructor() {
+        this.init();
+      }
+
+      init() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.vx = (Math.random() - 0.5) * 0.3;
+        this.vy = (Math.random() - 0.5) * 0.3;
+        this.size = Math.random() * 2 + 0.5;
+        this.alpha = Math.random() * 0.5 + 0.2;
+        this.twinkleSpeed = Math.random() * 0.02 + 0.005;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+        // Twinkle effect
+        this.alpha += this.twinkleSpeed;
+        if (this.alpha > 0.8 || this.alpha < 0.2) this.twinkleSpeed *= -1;
+      }
+
+      draw() {
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Subtle glow
+        if (this.size > 1.5) {
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = 'rgba(34, 211, 238, 0.5)';
+        } else {
+          ctx.shadowBlur = 0;
+        }
+      }
+    }
+
+    for (let i = 0; i < 120; i++) {
+      particles.push(new Particle());
+    }
+
+
+    // Mouse interaction
+    let mouse = { x: null, y: null };
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.x;
+      mouse.y = e.y;
+    });
+    window.addEventListener('mouseleave', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+
+        // Connect to mouse
+        if (mouse.x != null) {
+          const dx = p.x - mouse.x;
+          const dy = p.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 200) {
+            ctx.strokeStyle = `rgba(34, 211, 238, ${0.3 * (1 - dist / 200)})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.stroke();
+
+            // Gentle attraction
+            const force = (200 - dist) / 200;
+            const fx = dx / dist * force * 0.5;
+            const fy = dy / dist * force * 0.5;
+            p.x -= fx;
+            p.y -= fy;
+          }
+        }
+
+        // Connect to other particles
+        particles.forEach(p2 => {
+          const dx = p.x - p2.x;
+          const dy = p.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.strokeStyle = `rgba(34, 211, 238, ${0.15 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.6;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+          }
+        });
+      });
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+
+</html>
