@@ -324,6 +324,22 @@ section {
 }
 
 /* Skills Cards */
+.subhead {
+  margin: 22px 0 14px 0;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.subhead-cyan {
+  color: var(--accent-cyan);
+}
+
+.subhead-purple {
+  color: #e9d5ff;
+}
+
 .skill-card {
   align-items: center;
   justify-content: center;
@@ -338,6 +354,7 @@ section {
   border-color: var(--accent-primary);
 }
 
+
 /* Contact */
 .contact-section {
   display: flex;
@@ -345,13 +362,43 @@ section {
   align-items: center;
 }
 
-.contact-form {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.contact-sub {
+  margin-top: 10px;
+  margin-bottom: 26px;
+  text-align: center;
+  max-width: 70ch;
 }
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+}
+
+.contact-link:hover {
+  color: var(--text-primary);
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+.contact-icon {
+  display: inline-flex;
+}
+
 
 input,
 textarea {

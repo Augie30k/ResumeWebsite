@@ -54,9 +54,8 @@
           Hello World</h2>
         <h1 style="font-size: 72px; margin-bottom: 16px; font-weight: 800;">I'm <span class="gradient-text">Augustine
             Asumadu</span></h1>
-        <p class="subtitle">Fullstack software engineer at Optum Inc. (United Health Group) specializing in Web Systems
-          & AI. <br> Pursuing MS CS at Georgia
-          Institute of Technology.</p>
+        <p class="subtitle">Full-stack software engineer at Optum (UnitedHealth Group), focused on web systems and AI.
+          Pursuing M.S. Computer Science at Georgia Tech.</p>
 
         <div class="hero-buttons">
           <!-- <a href="Resume.docx.pdf" download="Augustine_Asumadu_Resume.pdf" class="project-link-btn"
@@ -146,16 +145,6 @@
           <div style="text-align: right;">
             <span class="feature-tag"
               style="background: rgba(74, 222, 128, 0.1); border-color: rgba(74, 222, 128, 0.3); color: #4ade80;">Graduated</span>
-          </div>
-        </div>
-        <div style="margin-top: 16px;">
-          <p style="color: #ffffff; font-weight: 600; margin-bottom: 10px; font-size: 14px;">Relevant Coursework:</p>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 7641 Machine Learning</span>
-            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 7643 Deep Learning</span>
-            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 6601 Artificial Intelligence</span>
-            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 6250 Computer Networks</span>
-            <span class="feature-tag" style="margin: 0; font-size: 13px;">CS 7637 Knowledge-Based AI</span>
           </div>
         </div>
       </div>
@@ -318,8 +307,8 @@
         Technical Arsenal
       </h2>
 
-      <h3 style="color: var(--accent-cyan); margin-bottom: 16px; margin-top: 0px;">Fullstack Engineering</h3>
-      <div class="bento-grid" style="margin-bottom: 40px;">
+      <h3 class="subhead subhead-cyan">Full-stack Engineering</h3>
+      <div class="bento-grid skills-grid">
         <div class="bento-item col-span-4 skill-card">React & Next.js</div>
         <div class="bento-item col-span-4 skill-card">TypeScript / Node.js</div>
         <div class="bento-item col-span-4 skill-card">Python (Django/Flask)</div>
@@ -328,57 +317,63 @@
         <div class="bento-item col-span-4 skill-card">CI/CD & DevOps</div>
       </div>
 
-      <h3 style="color: var(--accent-purple); margin-bottom: 16px;">AI & Machine Learning</h3>
-      <div class="bento-grid">
-        <div class="bento-item col-span-4 skill-card">PyTorch & NumPy</div>
+      <h3 class="subhead subhead-purple">AI & Machine Learning</h3>
+      <div class="bento-grid skills-grid">
+        <div class="bento-item col-span-4 skill-card">PyTorch & TensorFlow</div>
         <div class="bento-item col-span-4 skill-card">Scikit-learn & Pandas</div>
-        <div class="bento-item col-span-4 skill-card">Search Algorithms (A*)</div>
-        <div class="bento-item col-span-4 skill-card">Game Theory (Minimax)</div>
-        <div class="bento-item col-span-4 skill-card">Supervised Learning</div>
+        <div class="bento-item col-span-4 skill-card">Search (A*, BFS/DFS)</div>
+        <div class="bento-item col-span-4 skill-card">Reinforcement Learning</div>
+        <div class="bento-item col-span-4 skill-card">Optimization Techniques</div>
         <div class="bento-item col-span-4 skill-card">Neural Networks</div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section id="contact" class="contact-section">
-      <h2>Open to Opportunities</h2>
-      <p style="margin-bottom: 32px; text-align: center;">Currently seeking full-time Software Engineering roles in
-        Application Development, AI/ML .</p>
+      <h2 class="center">Open to Opportunities</h2>
+      <p class="contact-sub">
+        Currently seeking full-time Software Engineering roles in application development and AI/ML.
+      </p>
 
-      <div style="display: flex; justify-content: center; gap: 32px; margin-bottom: 40px;">
-        <a href="https://github.com" target="_blank"
-          style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-            </path>
-          </svg>
+      <div class="contact-links">
+        <!-- TODO: replace with your real GitHub -->
+        <a href="https://github.com" target="_blank" rel="noreferrer" class="contact-link">
+          <span class="contact-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </span>
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/augustine-asumadu-137557168/" target="_blank"
-          style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
+
+        <a href="https://www.linkedin.com/in/augustine-asumadu-137557168/" target="_blank" rel="noreferrer"
+          class="contact-link">
+          <span class="contact-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </span>
           LinkedIn
         </a>
-        <a href="mailto:augie30k@gmail.com"
-          style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
+
+        <a href="mailto:augie30k@gmail.com" class="contact-link">
+          <span class="contact-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </span>
           Email
         </a>
       </div>
-
     </section>
-
   </main>
 
   <footer>
